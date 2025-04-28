@@ -39,7 +39,7 @@ export const NewsCard = ({
 
   return (
     <Card className={clsx('mb-4 max-w-[966px] relative', className)}>
-      <StatsRow className="mb-1" publishedAt={publishedAt} traffic={traffic} reach={reach} />
+      <StatsRow className="mb-1 w-full pr-16" publishedAt={publishedAt} traffic={traffic} reach={reach} />
 
       <Tag className="absolute top-3.5 right-2" color={sentimentColor}>
         {sentiment.charAt(0).toUpperCase() + sentiment.slice(1)}
